@@ -1,6 +1,10 @@
 var stylus = require('stylus')
-    , fs = require('fs')
-    , str = require('fs').readFileSync(__dirname + '/aristo/index.styl', 'utf8');
+    , fs = require('fs');
+
+desc('Compile');
+task('default', function (params) {
+
+  var str = fs.readFileSync(__dirname + '/aristo/index.styl', 'utf8');
 
   stylus(str)
     .set('filename', __dirname + '/aristo/index.styl')
@@ -12,7 +16,8 @@ var stylus = require('stylus')
 
       fs.writeFile('aristo.css', css, function (err) {
         if (err) throw err;
-        console.log('It\'s saved!');
+        console.log('Compiled!');
       });
   });
 
+});

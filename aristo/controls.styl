@@ -1,0 +1,79 @@
+// Checkboxes and radio buttons
+@import "functions"
+@import "text"
+
+label.aristo-radio, label.aristo-checkbox
+  bold-aristo-font()
+
+aristo-checkbox()
+  -khtml-appearance: none
+  background-image image_url("aristo-checkbox-o.png")
+  background-repeat no-repeat
+  width 15px
+  height 16px
+  vertical-align top
+  &:checked
+    background-image image_url("aristo-checkbox-x.png")
+    
+input.aristo
+    &[type=checkbox]
+      aristo-checkbox()
+
+aristo-radio()
+  -khtml-appearance: none
+  background-image image_url("aristo-radio-o.png")
+  background-repeat no-repeat
+  width 17px
+  height 17px
+  vertical-align top
+  &:checked
+    background-image image_url("aristo-radio-x.png")
+
+input.aristo
+    &[type=radio]
+      aristo-radio()
+
+// Sliders
+
+aristo-slider()
+  -khtml-appearance none 
+  -webkit-border-image image_url("aristo-slider-horizontal-track.png") 2 4 2 4 / 2px 4px 2px 4px repeat repeat
+  height 2px
+  padding 0
+
+::-webkit-slider-thumb
+  -khtml-appearance none
+  background-image image_url("aristo-slider-knob-o.png")
+  background-repeat no-repeat
+  width 23px
+  height 24px
+  &:active
+    background-image image_url("aristo-slider-knob-x.png")
+
+input[type=range] 
+  aristo-slider()
+  
+// Combo/select boxes
+
+aristo-select()
+  -khtml-appearance none
+  bold-aristo-font()
+  background-image image_url("aristo-select-arrow-bg.png") , image_url("aristo-select-bg.png")
+  background-repeat no-repeat, repeat-x
+  background-position top right, 0 0
+  border-top 0px
+  border-left 1px solid #bdbdbd
+  border-bottom 0px
+  border-right 0px
+  -webkit-border-radius 3px
+  -moz-border-radius 3px
+  border-radius: 3px
+  text-shadow 0px 1px 1px #fff
+  color #4F4F4F
+  padding 0px 40px 0px 13px
+  height 24px
+  line-height 20px
+
+select.aristo
+  aristo-select()
+

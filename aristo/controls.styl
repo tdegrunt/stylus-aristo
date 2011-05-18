@@ -1,19 +1,16 @@
 // Checkboxes and radio buttons
-@import "functions"
-@import "text"
-
 label.aristo-radio, label.aristo-checkbox
   bold-aristo-font()
 
 aristo-checkbox()
   -khtml-appearance: none
-  background-image image_url("aristo-checkbox-o.png")
+  background-image url(images/aristo-checkbox-o.png)
   background-repeat no-repeat
   width 15px
   height 16px
   vertical-align top
   &:checked
-    background-image image_url("aristo-checkbox-x.png")
+    background-image url(images/aristo-checkbox-x.png)
     
 input.aristo
     &[type=checkbox]
@@ -21,13 +18,13 @@ input.aristo
 
 aristo-radio()
   -khtml-appearance: none
-  background-image image_url("aristo-radio-o.png")
+  background-image url(images/aristo-radio-o.png)
   background-repeat no-repeat
   width 17px
   height 17px
   vertical-align top
   &:checked
-    background-image image_url("aristo-radio-x.png")
+    background-image url(images/aristo-radio-x.png)
 
 input.aristo
     &[type=radio]
@@ -37,18 +34,18 @@ input.aristo
 
 aristo-slider()
   -khtml-appearance none 
-  -webkit-border-image image_url("aristo-slider-horizontal-track.png") 2 4 2 4 / 2px 4px 2px 4px repeat repeat
+  -webkit-border-image url(images/aristo-slider-horizontal-track.png) 2 4 2 4 / 2px 4px 2px 4px repeat repeat
   height 2px
   padding 0
 
 ::-webkit-slider-thumb
   -khtml-appearance none
-  background-image image_url("aristo-slider-knob-o.png")
+  background-image url(images/aristo-slider-knob-o.png)
   background-repeat no-repeat
   width 23px
   height 24px
   &:active
-    background-image image_url("aristo-slider-knob-x.png")
+    background-image url(images/aristo-slider-knob-x.png)
 
 input[type=range] 
   aristo-slider()
@@ -58,7 +55,7 @@ input[type=range]
 aristo-select()
   -khtml-appearance none
   bold-aristo-font()
-  background-image image_url("aristo-select-arrow-bg.png") , image_url("aristo-select-bg.png")
+  background-image url(images/aristo-select-arrow-bg.png) , url(images/aristo-select-bg.png)
   background-repeat no-repeat, repeat-x
   background-position top right, 0 0
   border-top 0px

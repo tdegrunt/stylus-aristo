@@ -1,5 +1,3 @@
-@import "functions"
-
 aristo-menu()
   list-style none
   height 28px
@@ -7,7 +5,7 @@ aristo-menu()
   padding 0
   display inline-block
   overflow hidden
-  background-image image_url("aristo-menu-bg.png")
+  background-image url(images/aristo-menu-bg.png)
   background-repeat repeat-x
   background-position center center
   li
@@ -20,6 +18,7 @@ aristo-menu()
       padding-right 18px
     height 28px
     a
+      font-family aristo_font_family
       font-size 11px
       line-height 28px
       font-weight bold
@@ -30,7 +29,7 @@ aristo-menu()
 
 aristo-menu-inverse()
   aristo-menu()
-  background-image image_url("aristo-menu-inverse-bg.png")
+  background-image url(images/aristo-menu-inverse-bg.png)
   li
     a
       color #a5a5a5

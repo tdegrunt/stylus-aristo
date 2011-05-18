@@ -4,7 +4,8 @@ var stylus = require('stylus')
 
   stylus(str)
     .set('filename', __dirname + '/aristo/index.styl')
-    .define('url', stylus.url({ paths: [__dirname + '/images'], limit: 50000 }))
+    // Don't inline images for now, they're too big
+    //.define('url', stylus.url({ paths: [__dirname + '/images'], limit: 50000 }))
     .render(function(err, css){
 
       if (err) throw err;

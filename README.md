@@ -1,7 +1,17 @@
-![Aristo Header](http://cappuccino.org/aristo/Examples/Aristo-Header.png)
+# Aristo stylus
 
-Introduction
-------------
+Aristo stylus is a port of the [compass-aristo-plugin](http://github.com/hpoydar/compass-aristo-plugin) to [stylus](learnboost.github.com/stylus/)
+
+## Todo
+
+- Windows
+- Decrease image & css size
+- Fix Chrome compatibility with scroll bars
+- Do the todos of compass-aristo-plugin
+
+## About Aristo
+
+![Aristo Header](http://cappuccino.org/aristo/Examples/Aristo-Header.png)
 
 Aristo is an open source UI distributed as part of the [Cappuccino Web Application Framework](http://cappuccino.org)
 and specifically designed for the cross platform challenges applications face today.
@@ -15,13 +25,3 @@ You can find out more about Aristo by visiting [http://cappuccino.org/aristo](ht
 * 280 North, Inc., [280north.com](http://280north.com)
 * Sofa, [madebysofa.com](http://madebysofa.com/)
 
-Aristo stylus
--------------
-
-Aristo stylus is a port of the [compass-aristo-plugin](http://github.com/hpoydar/compass-aristo-plugin)
-
-## Todo
-
-- Windows
-- Decrease image & css size
-- Fix Chrome compatibility with scroll bars
